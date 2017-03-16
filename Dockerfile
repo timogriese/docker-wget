@@ -1,5 +1,5 @@
 FROM alpine
 MAINTAINER Timo Griese <timo@griese.cc>
 
-# install wget
-RUN apk --update add --no-cache openssl wget
+# install wget and necessary packages
+RUN apk --update add --no-cache ca-certificates openssl wget
